@@ -4,31 +4,30 @@
 <head> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Send Mail v2</title> 
+  <title>Send Mail v3</title> 
 
-  <script src="https://smtpjs.com/v3/smtp.js"> 
-  </script> 
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
   <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
 
 </head> 
-
   
 
 <body> 
 
-  <!--div>
-  	<button type="submit" onclick="save_settings()">Settings</button>
-  </div-->
   <div class="wrapper">
-    <div class="fromto">
+    <div class="frompass">
+    	<!--label for="from" id="label">From: </label-->
 	    <input class="inputs" type="email" placeholder="From" id="from" autocomplete="on" required />
+	    <!--label for="passwd" id="label">Password: </label-->
 	    <input class="inputs" type="text" placeholder="Password" id="passwd" autocomplete="on" required />
+         <hr />
+    	<button id="toggle" onclick="toggle()">Setup</button>
+    	<br />
     	<br />
     	<br />
     	<input class="inputs" type="email" placeholder="To" id="to" required>
     </div>
-    <br />
     <div class="subcont">
     	<input class="inputs" type="text" placeholder="Subject" id="subj">
     	<textarea class="inputs" name="main" cols="50" row="10" class="main" placeholder="Type Something..." id="main"></textarea>

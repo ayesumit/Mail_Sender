@@ -46,12 +46,13 @@ input[type=submit]:hover {
   resize: none;
 }
 
-.label{
-	font-weight: 100;
+#label{
+	font-weight: 200;
 	font-size: 10px;
+	text-align: left;
 }
 
-.fromto {
+.frompass {
 	width: 100%;
 	border-radius: 5px;
 }
@@ -67,7 +68,18 @@ input[type=submit]:hover {
 #passwd {
 	width: 80%;
 	padding: 12px;
+
 }
+
+#toggle {
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	background-color: greenyellow;
+	border-radius: 20px;
+}
+
 .subcont {
 	width: 100%;
 	border-radius: 20px;
