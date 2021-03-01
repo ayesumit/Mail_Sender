@@ -22,10 +22,6 @@
 	    <!--label for="passwd" id="label">Password: </label-->
 	    <input class="inputs" type="text" placeholder="Password" id="passwd" autocomplete="on" required />
          <hr />
-    	<button id="toggle" onclick="toggle()">Setup</button>
-    	<br />
-    	<br />
-    	<br />
     	<input class="inputs" type="email" placeholder="To" id="to" required>
     </div>
     <div class="subcont">
@@ -33,8 +29,9 @@
     	<textarea class="inputs" name="main" cols="50" row="10" class="main" placeholder="Type Something..." id="main"></textarea>
     </div>
     <br />
-        <input type="submit" value="Send Email" onclick="sendEmail()" id="send"/>
-        <p style="font-size: 15px" id="send" align="right"><a href="settings.html">HELP</a></p>
+			<input type="submit" value="Send Email" onclick="sendEmail()" id="send"/>
+        <p style="font-size: 15px" id="send" align="right"><a href="settings.html">HELP</a>        	<button id="toggle" onclick="toggle()">Setup</button>
+</p>
 
     </div>
   

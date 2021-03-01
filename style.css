@@ -1,6 +1,6 @@
 body {
     font-size: 15pt;
-    
+    background-size: cover;
 }
 
 /*
@@ -76,7 +76,7 @@ input[type=submit]:hover {
 	font-size: 12px;
 	font-weight: bold;
 	color: white;
-	background-color: greenyellow;
+	background-color: darkred;
 	border-radius: 20px;
 }
 
