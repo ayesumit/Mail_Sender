@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Send Mail v2</title> 
+
+  <script src="https://smtpjs.com/v3/smtp.js"> 
+  </script> 
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head> 
+
+  
+
+<body> 
+
+  <div>
+  	<button type="submit" onclick="save_settings()">Settings</button>
+  </div>
+  <div class="wrapper">
+    <div class="fromto">
+    	<label>From Email</label>
+	    <input class="inputs" type="email" placeholder="From" id="from" autocomplete="on" required />
+	    <input class="inputs" type="text" placeholder="Password" id="passwd" autocomplete="on" required />
+    	<br />
+    	<br />
+    	<input class="inputs" type="email" placeholder="To" id="to" required>
+    </div>
+    <br />
+    <div class="subcont">
+    	<input class="inputs" type="text" placeholder="Subject" id="subj">
+    	<textarea class="inputs" name="main" cols="50" row="10" class="main" placeholder="Type Something..." id="main"></textarea>
+    </div>
+    <br />
+        <input type="submit" value="Send Email" onclick="sendEmail()" id="send"/>
+    </div>
+  
+    
+</body> 
+
+  
+
+</html>
